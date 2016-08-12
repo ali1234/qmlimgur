@@ -1,0 +1,21 @@
+This is a simple QML application which tracks an Imgur album and shows the 
+pictures from it in full screen. You need an Imgur API key to use it.
+
+The album is refreshed every 10 minutes. Images are cached on disk. You must
+ensure the disk cache is large enough for the whole album, otherwise images
+will be reloaded every time the currently displayed image changes. The cache
+size is set in main.cpp.
+
+You may also interact using left and right swipes and by pressing the left
+and right arrow keys.
+
+Usage:
+
+qmlimgur <client_id> <album_id>
+
+client_id: The client ID given to you when you register an Imgur app.
+album_id: The characters in the album URL: imgur.com/a/<album_id>.
+
+Compiling:
+
+qmake && make
