@@ -16,11 +16,6 @@
 #include <QtQuick/QQuickView>
 
 
-#include <QHash>
-#include <QBuffer>
-#include <QPair>
-
-
 // The QML only keeps previous, current, and next images from the slidehsow.
 // To prevent it from reloading the images every time the slideshow advances
 // we must cache them. This next piece of code installs the built in Qt disk
